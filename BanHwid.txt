@@ -1,3 +1,4 @@
-return{
-"Null"
+BanHwid = {
+[lUKPGiinQkCA0lPr5VFauR5c4IW996m4wObQqpAPIlw=] = true
 }
+return BanHwid
