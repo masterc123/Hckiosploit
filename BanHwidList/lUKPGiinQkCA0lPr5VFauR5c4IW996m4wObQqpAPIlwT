@@ -1,4 +1,1 @@
-HwidBan = {
-[10136401] = true
-}
-return HwidBan
+game.Players.LocalPlayer:Kick("You're Ban for using Hckiosploit") 
