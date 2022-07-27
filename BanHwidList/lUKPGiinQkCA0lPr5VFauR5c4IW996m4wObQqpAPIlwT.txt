@@ -1,0 +1,4 @@
+HwidBan = {
+[10136401] = true
+}
+return HwidBan
