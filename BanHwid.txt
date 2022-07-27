@@ -1,4 +1,4 @@
 BanHwid = {
-[lUKPGiinQkCA0lPr5VFauR5c4IW996m4wObQqpAPIlwT] = true
+[2868947397] = true
 }
 return BanHwid
