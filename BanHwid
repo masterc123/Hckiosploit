@@ -1,5 +1,4 @@
 BanHwid = {
-["A9662659-AD94-4849-8042-46C7ADEFE54E"] = true,
-[2868947397] = true
+["A9662659-AD94-4849-8042-46C7ADEFE54E"] = true
 }
 return BanHwid
