@@ -1,0 +1,45 @@
+--// Variables
+local DLL = "Dll"
+local Title = "Hckiosploit"
+local StarterGui = game:GetService("StarterGui")
+
+--// Functions
+
+local function SendNotification(DescriptionArg, DurationArg)
+    StarterGui:SetCore("SendNotification", {
+        Title = "Hckiosploit",
+        Text = DescriptionArg,
+        Duration = DurationArg
+    })
+end
+
+--// Main
+
+if not writefile then SendNotification("Your "..Dll.." does not support writefile()", 3) return end
+if not isfile then SendNotification("Your "..Dll.." does not support isfile()", 3) return end
+if not delfile then SendNotification("Your "..Dll.." does not support delfile()", 3) return end
+if not makefolder then SendNotification("Your "..Dll.." does not support makefolder()", 3) return end
+if not isfolder then SendNotification("Your "..Dll.." does not support isfolder()", 3) return end
+if not delfolder then SendNotification("Your "..Dll.." does not support delfolder()", 3) return end
+
+
+local GameName = game.Name
+local GameId = game.PlaceId
+local FolderName = "GameJoined"
+local FileName = "Game.txt"
+ if not isfolder(FolderName) then
+        makefolder(FolderName)
+        if not isfile(FileName) then
+        writefile(FolderName.."/Game.txt",GameName.."|"..GameId)
+        else
+        delfile(FolderName.."/Game.txt")
+         writefile(FolderName.."/Game.txt",GameName.."|"..GameId)
+        end
+   else
+         if not isfile(FileName) then
+        writefile(FolderName.."/Game.txt",GameName.."|"..GameId)
+        else
+        delfile(FolderName.."/Game.txt")
+         writefile(FolderName.."/Game.txt",GameName.."|"..GameId)
+        end
+end
