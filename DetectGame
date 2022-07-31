@@ -1,6 +1,5 @@
 --// Variables
 local DLL = "Dll"
-local Title = "Hckiosploit"
 local StarterGui = game:GetService("StarterGui")
 
 --// Functions
